@@ -1,0 +1,5 @@
+zookeeper常用功能
+1.配置文件管理
+（与spring结合使用，spring启动时从zookeeper上获取文件数据，zookeeper数据修改是推送数据）
+2.发布与订阅
+3.分布式锁
