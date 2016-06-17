@@ -2,8 +2,11 @@ package com.test.java.listener;
 
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.RetryNTimes;
-
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+@Component
 public class ZkListener extends AbstractListener{
+	@Value("${host}")
 	private String path;
 	public ZkListener() throws InterruptedException{
 		setPath(path);
